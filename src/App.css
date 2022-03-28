@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
+.logo {
+  padding: 1.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  padding: 12px;
+  height: 3000px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.links {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .links {
+    position: absolute;
+    right: 2rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
+/* Home page */
+.container {
+  max-width: 20rem;
+  border: 1px solid #ebebee;
+}
+
+.container h1 {
+  margin: 10px;
+}
+
+.container p {
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.background-img {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: linear-gradient(rgba(63, 207, 212, 0.283), rgba(0, 0, 0, 0.7)),
+    url(../src/Image/rui_marinho.jpeg) center/cover no-repeat;
 }
 
-.App-link {
-  color: #61dafb;
+.banner {
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #ebebee;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.explore-btn {
+  padding: 6px;
+  background: transparent;
+  border: solid 2px #fafafa;
+  color: #fafafa;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition-duration: 600ms;
+}
+.explore-btn:hover {
+  background-color: #fafaff;
+  color: #101010;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    max-width: 30rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* About page */
+.about-container {
+  display: grid;
+  justify-content: center;
+}
+
+.title {
+  color: #101010;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.person-info {
+  text-align: center;
+  color: #101010;
+}
+.person-info img {
+  max-width: 20rem;
+  border-radius: 50%;
+}
+.perosn-name {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.person-about {
+  text-transform: capitalize;
+}
+
+.about-main {
+  display: grid;
+  margin-bottom: 5rem;
+}
+.about {
+  background-color: #101d2b27;
+  margin-top: 20px;
+  width: 20rem;
+  border-radius: 10px;
+  padding: 1rem;
+  letter-spacing: 2px;
+}
+.about-header {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #836605;
+}
+
+@media screen and (min-width: 1021px) {
+  .about-main {
+    display: flex;
+    /* position: absolute;
+    top: 10rem;
+    left: 5rem; */
+  }
+  .about {
+    width: 30rem;
+    margin-left: 5rem;
+  }
+}
+
+/* Blog */
+.blog-container {
+  margin: 2rem;
+  font-size: 18.5px;
+}
+
+.blog-container h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.trips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.5px;
+  padding: 1rem;
+}
+
+.trips p {
+  margin-left: 1rem;
+}
+
+.trips img {
+  max-width: 70vh;
+  border-radius: 1.5rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .trips {
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .trips p {
+    margin-top: 2rem;
+  }
+  .trips img {
+    max-width: 50vh;
+  }
+}
+
+/* contact page */
+.contact-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  max-width: 90vh;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  font-size: 1.3rem;
+}
+
+.reach-me {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.social-media {
+  display: grid;
+}
+
+.social-media a {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.social-media p {
+  padding-left: 8px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  color: #101011;
+}
+
+.social-media social-link {
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 933px) {
+  .contact {
+    max-width: 42vh;
   }
 }
